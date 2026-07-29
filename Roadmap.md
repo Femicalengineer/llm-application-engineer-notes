@@ -1,16 +1,13 @@
 LLM Application Engineer Curriculum — Full Roadmap
 Already built
-Theory foundations
+Theory foundations (Phase_1/, confirmed order 2026-07-29 — precede the applied notebooks 001 onward)
 
-Phase 1 — LLM foundations
-Phase 1 — Production LLM
-FFNN Diabetes
-loss_functions
-tensors_and_operations
-transformer from scratch
-pytorch_transformer_bootcamp_test
+1. phase1_llm_foundations.ipynb — Sections 1-3: RLHF, DPO, Constitutional AI/RLAIF
+2. ai_engineer_tutorial.ipynb — Sections 8-12: Prompting techniques (zero-shot, few-shot, CoT, ReAct)
+3. phase1_production_llm.ipynb — Section 13+: KV Cache / inference optimization
 
-AI Engineer tutorial
+Also present in Phase_1/ but confirmed NOT part of this sequence: PyTorch_Transformer_Bootcamp_Test.ipynb (a separate, unrelated quiz-style notebook — tensors/FFNN/loss functions/transformer attention, Questions 1-14 + reflection; not numbered against the Section 1→13 theory sequence above).
+
 Applied notebooks (moved into Phase 2/03_Anthropic_Notes/ alongside the collaborative series, numbered 001-003)
 
 001 — Build_Smarter_AI_Apps — LangChain modern
@@ -40,6 +37,6 @@ End-to-end system: Chroma + advanced retrievers (006) + multi-agent LangGraph sy
 Deliberately out of scope
 Fine-tuning / model customization — ML-engineering territory, not typically required for this role
 Multi-provider abstraction — minor, since LangChain already abstracts most of it
-Midterm project (Projects/midterm_throne_of_glass_companion.ipynb) — self-implemented by Sarah with Claude debugging support, now complete through Sections 1-7: vector store, two specialist retrieval tools, self-query spoiler filtering, Subagents-based multi-agent orchestration (redone from an initial Router pattern) with real cross-thread memory, eval set, pooled full-system retrieval metrics, and an LLM-as-judge spoiler-leakage check that reads actual retrieved context (not just the question/answer). Only the closing Reflection is still unwritten.
+Midterm project (Projects/midterm_throne_of_glass_companion.ipynb) — self-implemented by Sarah with Claude debugging support using the mechanisms from applied notebooks 001-007, now complete through Sections 1-7: vector store, two specialist retrieval tools, self-query spoiler filtering, Subagents-based multi-agent orchestration (redone from an initial Router pattern) with real cross-thread memory, eval set, pooled full-system retrieval metrics, and an LLM-as-judge spoiler-leakage check that reads actual retrieved context (not just the question/answer). Only the closing Reflection is still unwritten.
 
 Saved to memory as the current version of record (project_curriculum_roadmap.md). Next up: 012 — Capstone, and/or finishing the midterm's Reflection, unless you want to reorder.
