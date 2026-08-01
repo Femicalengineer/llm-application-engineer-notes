@@ -3,9 +3,9 @@ import asyncio
 from fastmcp import Client
 
 async def main():
-    # Points straight at the .py file -- fastmcp handles starting math_server.py
+    # Points straight at the .py file -- fastmcp handles starting app5_math_server.py
     # as a subprocess and talking to it over stdio, underneath this one line.
-    client = Client("math_server.py")
+    client = Client("app5_math_server.py")
     async with client:
         tools = await client.list_tools()
         print("Available tools:")

@@ -1,12 +1,14 @@
 LLM Application Engineer Curriculum — Full Roadmap
 Already built
-Theory foundations (Phase_1/, confirmed order 2026-07-29 — precede the applied notebooks 001 onward)
+Theory foundations — brought into this repo 2026-07-31 as 000a/000b/000c (copied from Phase_1/, not moved; originals still sit there as of this writing), so the whole curriculum from theory through Capstone lives in one place/repo. Confirmed order 2026-07-29, precede the applied notebooks 001 onward.
 
-1. phase1_llm_foundations.ipynb — Sections 1-3: RLHF, DPO, Constitutional AI/RLAIF
-2. ai_engineer_tutorial.ipynb — Sections 8-12: Prompting techniques (zero-shot, few-shot, CoT, ReAct)
-3. phase1_production_llm.ipynb — Section 13+: KV Cache / inference optimization
+000a — llm_foundations.ipynb (copy of phase1_llm_foundations.ipynb) — Sections 1-3: RLHF, DPO, Constitutional AI/RLAIF
+000b — prompting_techniques.ipynb (copy of ai_engineer_tutorial.ipynb) — Sections 8-12: Prompting techniques (zero-shot, few-shot, CoT, ReAct)
+000c — production_inference.ipynb (copy of phase1_production_llm.ipynb) — Section 13+: KV Cache / inference optimization
 
-Also present in Phase_1/ but confirmed NOT part of this sequence: PyTorch_Transformer_Bootcamp_Test.ipynb (a separate, unrelated quiz-style notebook — tensors/FFNN/loss functions/transformer attention, Questions 1-14 + reflection; not numbered against the Section 1→13 theory sequence above).
+Kernel note: all three still carry their original `bootcamp_env_py312` kernel metadata, not `upskill2` — fine for viewing/git history, but re-running them from this location means picking a kernel that actually has their dependencies (peft/transformers etc.), not assuming `upskill2` has them.
+
+Still present in Phase_1/ (untouched, and NOT copied in) — PyTorch_Transformer_Bootcamp_Test.ipynb: a separate, unrelated quiz-style notebook (tensors/FFNN/loss functions/transformer attention, Questions 1-14 + reflection), confirmed not part of this sequence.
 
 Applied notebooks (moved into Phase 2/03_Anthropic_Notes/ alongside the collaborative series, numbered 001-003)
 
